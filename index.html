@@ -1,31 +1,180 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>For Arini Aufa Rahma</title>
-<style>
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap');
-:root{--bg:#090711;--purple:#a76cff;--lav:#e6c9ff;--text:#f4eaff;--muted:#b9a9c9;--line:#503366}
-*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(ellipse at 50% 0%,#29153e 0%,#100b1b 38%,var(--bg) 75%);color:var(--text);font-family:'DM Sans',sans-serif;font-weight:300;min-height:100vh}body:before{content:'';position:fixed;inset:0;pointer-events:none;opacity:.3;background-image:radial-gradient(#d8b7ff 1px,transparent 1px);background-size:37px 37px;mask-image:linear-gradient(to bottom,black,transparent 75%)}
-nav{position:sticky;top:0;z-index:5;background:#0b0713dd;backdrop-filter:blur(12px);border-bottom:1px solid #382344;display:flex;justify-content:center;gap:clamp(12px,3vw,30px);padding:13px 8px;flex-wrap:wrap}nav a{font-size:10px;letter-spacing:1.5px;color:#c8b3d8;text-decoration:none;text-transform:uppercase}nav a:hover{color:#fff}
-section{min-height:88vh;padding:70px 20px;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;position:relative}.eyebrow{font-size:10px;letter-spacing:4px;text-transform:uppercase;color:#b38bd4;margin-bottom:22px}.serif{font-family:'Playfair Display',serif;font-weight:400}h1{font-size:clamp(43px,10vw,86px);line-height:1.08;margin:8px 0;color:#f1dcff;text-shadow:0 0 35px #a76cff55}h2{font-size:clamp(30px,6vw,48px);line-height:1.2;margin:8px 0 24px}h2 em,h1 em{color:#d4a4ff;font-weight:400}p{font-size:13px;line-height:2;color:var(--muted);max-width:590px;margin:13px auto}.rule{width:60px;height:1px;background:linear-gradient(90deg,transparent,#bb8ce9,transparent);margin:24px auto}.btn{display:inline-block;border:1px solid #a96ee7;color:#e9d5ff;background:#30164a;border-radius:30px;padding:12px 23px;margin:18px 7px 0;font:400 11px 'DM Sans';letter-spacing:.5px;cursor:pointer;transition:.25s}.btn:hover{background:#a76cff;color:#100817;box-shadow:0 0 25px #a76cff55;transform:translateY(-2px)}.ghost{background:transparent;border-color:#654a78;color:#cbb7d9}.panel{width:min(680px,100%);background:linear-gradient(145deg,#21132fdd,#120d1b);border:1px solid #523568;border-radius:16px;padding:clamp(23px,5vw,45px);box-shadow:0 15px 60px #0005;text-align:left}.panel p{max-width:none}.signature{text-align:right;color:#d8b6ff;font-family:'Playfair Display',serif;font-style:italic;margin-top:25px}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:13px;width:min(650px,100%)}.photo{aspect-ratio:3/4;border:1px solid #56386b;border-radius:8px;background:linear-gradient(145deg,#352047,#171020);overflow:hidden;display:flex;align-items:center;justify-content:center;color:#bda1d8;font-size:11px;position:relative}.photo img{width:100%;height:100%;object-fit:cover}.photo span{padding:12px}.wishes{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;width:min(760px,100%)}.wish{border:1px solid #54366b;background:#1b1128;border-radius:12px;padding:25px 18px;text-align:left}.wish .num{color:#b77aff;font-size:11px;letter-spacing:2px}.wish p{font-family:'Playfair Display',serif;font-size:20px;line-height:1.5;color:#e4d1f6}.cake{font-size:65px;margin:25px;filter:drop-shadow(0 0 18px #c58cff)}.candle{display:inline-block;cursor:pointer;transition:.3s}.candle.off{filter:grayscale(1);opacity:.45}.foot{font-size:10px;letter-spacing:2px;color:#80698f;margin-top:35px}
-#lock{position:fixed;z-index:20;inset:0;background:radial-gradient(ellipse at center,#2d1743,#080610 70%);display:flex;align-items:center;justify-content:center;padding:20px;text-align:center}#lock.hide{display:none}.lockbox{max-width:390px}.lockbox input{background:#160e21;border:1px solid #74528d;border-radius:10px;padding:14px;color:white;text-align:center;letter-spacing:8px;width:170px;font-size:18px;outline:none}.err{height:20px;color:#ffb8d0;font-size:12px}.float{position:fixed;bottom:-30px;z-index:1;pointer-events:none;color:#c9a0ff;animation:rise 8s linear forwards}@keyframes rise{to{transform:translateY(-110vh) rotate(260deg);opacity:0}}footer{padding:25px;text-align:center;color:#745d86;font-size:10px;letter-spacing:2px}
-@media(max-width:600px){.grid{grid-template-columns:repeat(2,1fr)}.wishes{grid-template-columns:1fr}.wish{padding:18px}.wish p{font-size:18px}nav{gap:10px}nav a{font-size:8px;letter-spacing:1px}section{min-height:85vh;padding:55px 18px}}
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For Arini Aufa Rahma</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body, html {
+            width: 100%;
+            height: 100%;
+            font-family: 'Georgia', serif;
+            overflow: hidden;
+            color: #fff;
+        }
+
+        /* Styling Video Background */
+        .video-background {
+            position: fixed;
+            right: 0;
+            bottom: 0;
+            min-width: 100%;
+            min-height: 100%;
+            width: auto;
+            height: auto;
+            z-index: -1000;
+            object-fit: cover;
+            filter: brightness(0.9);
+        }
+
+        /* Konten Utama di Atas Video */
+        .content-container {
+            position: relative;
+            z-index: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            text-align: center;
+            background: rgba(0, 0, 0, 0.2);
+            padding: 20px;
+        }
+
+        .subtitle-top {
+            font-size: 14px;
+            letter-spacing: 2px;
+            margin-bottom: 15px;
+            color: #ffd1dc;
+        }
+
+        h1 {
+            font-size: 42px;
+            font-style: italic;
+            margin-bottom: 10px;
+            text-shadow: 0 2px 10px rgba(0,0,0,0.5);
+        }
+
+        .subtitle-bottom {
+            font-size: 14px;
+            margin-bottom: 30px;
+            color: #fce4ec;
+        }
+
+        /* Kotak Input Password & Tombol */
+        .passcode-box {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 15px;
+            width: 100%;
+            max-width: 320px;
+        }
+
+        .input-group {
+            position: relative;
+            width: 100%;
+        }
+
+        .input-group input {
+            width: 100%;
+            padding: 12px 20px 12px 45px;
+            border-radius: 30px;
+            border: 1px solid rgba(255, 255, 255, 0.6);
+            background: rgba(255, 255, 255, 0.15);
+            color: #fff;
+            font-size: 14px;
+            outline: none;
+            backdrop-filter: blur(5px);
+            transition: all 0.3s ease;
+        }
+
+        .input-group input::placeholder {
+            color: #f3e5f5;
+        }
+
+        .input-group input:focus {
+            border-color: #fff;
+            background: rgba(255, 255, 255, 0.25);
+        }
+
+        .input-group span {
+            position: absolute;
+            left: 18px;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 14px;
+        }
+
+        .btn-submit {
+            width: 100%;
+            padding: 12px;
+            border-radius: 30px;
+            border: 1px solid rgba(255, 255, 255, 0.6);
+            background: rgba(255, 255, 255, 0.2);
+            color: #fff;
+            font-size: 15px;
+            letter-spacing: 1px;
+            cursor: pointer;
+            backdrop-filter: blur(5px);
+            transition: all 0.3s ease;
+        }
+
+        .btn-submit:hover {
+            background: rgba(255, 255, 255, 0.4);
+        }
+    </style>
 </head>
 <body>
-<div id="lock"><div class="lockbox"><div class="eyebrow">a little secret, just for you</div><div class="serif" style="font-size:42px;color:#e8d4ff">Before you enter…</div><p>Some things are meant to be opened<br>by the right person.</p><input id="password" type="password" maxlength="4" placeholder="••••" inputmode="numeric"><br><button class="btn" onclick="unlock()">Unlock your surprise ♡</button><div class="err" id="err"></div><p style="font-size:10px;letter-spacing:2px">a tiny key: 4 special numbers</p></div></div>
-<nav><a href="#home">Birthday</a><a href="#gallery">Gallery</a><a href="#found">Open when found</a><a href="#letter">Dear you</a><a href="#wishes">Wishes</a><a href="#final">The end</a></nav>
-<section id="home"><div class="eyebrow">a day as special as you</div><div class="serif" style="font-size:20px;color:#c8a4e7">For my favorite person</div><h1>Happy Birthday,<br><em>My Favorite Person</em></h1><div class="rule"></div><p>To the girl who makes ordinary moments<br>feel like something worth remembering.</p><button class="btn" onclick="document.querySelector('#gallery').scrollIntoView()">A little more for you ↓</button></section>
-<section id="gallery"><div class="eyebrow">little things about you</div><h2 class="serif">A few of my <em>favorite shots</em><br>of you</h2><p>Some moments deserve to be kept<br>a little closer to the heart.</p><div class="grid"><div class="photo"><span>your photo 01<br>♡</span></div><div class="photo"><span>your photo 02<br>♡</span></div><div class="photo"><span>your photo 03<br>♡</span></div></div><p style="font-size:10px">Ganti kotak ini dengan foto Arini ya ♡</p></section>
-<section id="found"><div class="eyebrow">a letter that found its way to you</div><h2 class="serif">Open when <em>found</em></h2><div style="font-size:70px;filter:drop-shadow(0 0 20px #a76cff)">🧪</div><p>Some words take time to arrive.<br>Maybe today is their time.</p><button class="btn" onclick="document.querySelector('#letter').scrollIntoView()">Open this letter ♡</button></section>
-<section id="letter"><div class="eyebrow">from a heart that quietly cares</div><h2 class="serif"><em>Dear you,</em></h2><div class="panel"><p>Aku tidak tahu apakah kata-kata mampu menjelaskan betapa istimewanya kehadiranmu. Ada hal-hal yang tumbuh diam-diam, tanpa suara, tanpa pernah meminta untuk diperhatikan—dan mungkin, perasaanku adalah salah satunya.</p><p>Di antara banyak hal yang datang dan pergi, ada namamu yang entah bagaimana menetap. Bukan karena aku punya alasan yang sempurna, melainkan karena ada sesuatu tentang dirimu yang selalu membuat dunia terasa sedikit lebih teduh.</p><p>Di hari istimewamu ini, aku berharap semesta lebih sering berpihak kepadamu. Semoga langkahmu dipertemukan dengan hal-hal baik, semoga lelahmu menemukan tempat untuk pulang, dan semoga setiap doa yang kau simpan diam-diam menemukan jalannya menuju langit.</p><p>Teruslah menjadi dirimu. Kamu tidak perlu menjadi sempurna untuk pantas mendapatkan kebahagiaan yang utuh.</p><p>Dan jika hari ini ada satu hal yang ingin kusampaikan: terima kasih telah hadir, Arini. Barangkali kamu tidak pernah tahu betapa berharganya itu.</p><div class="signature">— someone who wishes you well, always.</div></div></section>
-<section id="wishes"><div class="eyebrow">a new chapter begins</div><h2 class="serif">Wishes for the <em>year ahead</em></h2><div class="wishes"><div class="wish"><div class="num">01 / PEACE</div><p>May your heart always find a quiet place to rest.</p></div><div class="wish"><div class="num">02 / COURAGE</div><p>May you grow through every season, gently and bravely.</p></div><div class="wish"><div class="num">03 / HAPPINESS</div><p>May joy find you in the smallest, unexpected things.</p></div></div><p>Semoga Allah senantiasa menjaga dan memberkahi setiap langkahmu.</p><button class="btn" onclick="document.querySelector('#final').scrollIntoView()">One last thing ↓</button></section>
-<section id="final"><div class="eyebrow">and finally...</div><h1>Happy Birthday,<br><em>Sayangku.</em></h1><p>Semoga tahun ini membawa lebih banyak alasan<br>untuk tersenyum dan hal-hal indah untuk dikenang.</p><div class="cake"><span class="candle" onclick="this.classList.toggle('off')">🕯️</span><span class="candle" onclick="this.classList.toggle('off')">🕯️</span><span class="candle" onclick="this.classList.toggle('off')">🕯️</span></div><p>Make a wish, Arini. ✨</p><div class="rule"></div><div class="serif" style="font-size:27px;color:#d7b5ff;font-style:italic">With love, always ♡</div><div class="foot">MADE WITH A LITTLE LOVE, JUST FOR YOU</div></section>
-<footer>FOR ARINI AUFA RAHMA · 19.12 ♡</footer>
-<script>
-function unlock(){if(document.getElementById('password').value==='1912'){document.getElementById('lock').classList.add('hide');for(let i=0;i<24;i++)setTimeout(makeFloat,i*250)}else{document.getElementById('err').textContent='Hmm… try the special 4 numbers again ♡'}}
-document.getElementById('password').addEventListener('keydown',e=>{if(e.key==='Enter')unlock()});
-function makeFloat(){let el=document.createElement('div');el.className='float';el.textContent=['✦','♡','✧','⋆'][Math.floor(Math.random()*4)];el.style.left=Math.random()*100+'vw';el.style.fontSize=(12+Math.random()*20)+'px';document.body.appendChild(el);setTimeout(()=>el.remove(),8000)}
-</script>
-</body></html>
+
+    <!-- Latar Belakang Video -->
+    <video autoplay muted loop playsinline class="video-background">
+        <source src="background.mp4" type="video/mp4">
+        Browser Anda tidak mendukung tag video.
+    </video>
+
+    <!-- Halaman / Slide Login -->
+    <div id="login-section" class="content-container">
+        <div class="subtitle-top">a little world made for you ♡</div>
+        <h1>For Arini Aufa Rahma</h1>
+        <div class="subtitle-bottom">A small surprise is waiting<br>beneath the moonlight.</div>
+
+        <div class="passcode-box">
+            <div class="input-group">
+                <span>🔒</span>
+                <input type="password" id="passcode" placeholder="Enter the code">
+            </div>
+            <!-- Tombol dengan tulisan Aeluna yang berfungsi mengecek password -->
+            <button class="btn-submit" onclick="checkPassword()">Aeluna</button>
+        </div>
+    </div>
+
+    <!-- Halaman / Slide Utama (Awalnya disembunyikan) -->
+    <div id="main-content" style="display: none; padding: 50px; text-align: center;">
+        <h1>Selamat Datang, Arini! 🎉</h1>
+        <p>Isi slide atau halaman selanjutnya berhasil dibuka.</p>
+    </div>
+
+    <script>
+        function checkPassword() {
+            const inputCode = document.getElementById('passcode').value;
+            
+            // Ganti "1912" dengan kode rahasia atau tanggal penting Anda
+            const correctCode = "1912"; 
+
+            if (inputCode === correctCode) {
+                // Sembunyikan halaman login dan tampilkan konten utama
+                document.getElementById('login-section').style.display = 'none';
+                document.getElementById('main-content').style.display = 'block';
+            } else {
+                alert("Kode salah, coba masukkan angka yang benar yaa");
+            }
+        }
+    </script>
+</body>
+</html>
